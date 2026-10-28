@@ -1,0 +1,233 @@
+.pet-home-card,.school-home-card{width:100%;display:flex;align-items:center;gap:10px;text-align:left;border-radius:13px;padding:13px;margin:13px 0;background:#dee5ed;color:#365982}.pet-home-art{width:68px;height:65px}.pet-home-art svg{width:68px;height:65px;stroke:none}.pet-home-card>span:nth-child(2),.school-home-card>div{flex:1}.pet-home-card small,.school-home-card small{display:block;font-size:9px;color:#6e859f}.pet-home-card strong,.school-home-card strong{display:block;font-size:13px;margin:5px 0}.pet-home-card em,.school-home-card em{display:block;font-size:10px;line-height:1.6;font-style:normal}.school-home-card{background:#ede8df;color:#786c52}.school-home-card>span{font-size:23px;padding:10px}.goat-garden{position:relative;overflow:hidden;text-align:center;background:linear-gradient(#dfe6ee 0 70%,#a8bfda 70%);border-radius:18px;padding:18px 15px 12px}.goat-garden>svg{height:195px;width:195px;stroke:none;position:relative;z-index:2}.garden-sun{position:absolute;right:18px;top:17px;width:45px;height:45px;background:#e8d7a5;border-radius:50%}.garden-grass{position:absolute;left:26px;bottom:66px;font-size:35px;color:#6186b1}.goat-bubble{position:relative;z-index:3;background:#fffaf0e6;border-radius:8px;padding:10px;font-size:11px;min-height:35px}.paper-snack{position:absolute;left:29%;top:40%;opacity:0;font-size:30px;color:#6985a4}.goat-garden.eating>svg{animation:goat-chew .22s 8 alternate}.goat-garden.eating .paper-snack{animation:paper-eat 1.7s both}.pet-meters{display:flex;gap:12px;margin:20px 0}.pet-meters>div{flex:1}.pet-meters span{font-size:10px;display:flex;justify-content:space-between;color:#6681a0}.pet-meters i{display:block;height:5px;border-radius:5px;background:#d7dee7;margin-top:8px;overflow:hidden}.pet-meters em{display:block;height:100%;background:#6a90bb}.pet-care{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.pet-care button{background:#e3e9f0;border:1px solid #d4dce6;padding:13px 3px;border-radius:9px}.pet-care strong{font-size:11px;font-weight:500;display:block}.pet-care small{display:block;font-size:8px;color:#7a91ac;margin-top:5px}.pet-bond{display:flex;justify-content:space-between;margin-top:20px;font-size:10px;color:#5377a1}.pet-caption{font-size:10px;color:#7389a2;line-height:1.85}.goat-vent{border-top:1px solid #d5dce4;padding-top:21px;margin-top:26px}.goat-vent h2,.pet-recommendations h2,.life-section-title{font-size:15px;font-weight:500}.goat-vent p{font-size:10px;color:#73879d;line-height:1.8}.goat-vent textarea{width:100%;height:105px;resize:vertical;border:1px solid #cdd5df;border-radius:9px;padding:13px;background:#fffdf5;line-height:1.7;margin-bottom:10px}.goat-vent>small{display:block;font-size:9px;color:#7a8fa6;margin:9px 0}.pet-recommendations{margin:25px 0}.pet-recommendations button{display:flex;gap:12px;text-align:left;border-bottom:1px solid #d7dee5;padding:14px 0;width:100%}.pet-recommendations button>span{color:#648bb8}.pet-recommendations strong{font-size:12px}.pet-recommendations p{font-size:10px;line-height:1.8;color:#748ba5;margin:7px 0}.school-updated{padding:12px;background:#eeeae1;border-radius:8px;font-size:10px;line-height:1.8;color:#8e8574}.school-event{padding:18px 0;border-bottom:1px solid #e4e1d7}.school-date{font-size:10px;color:#9a865e;line-height:1.8}.school-event h3{font-size:14px;line-height:1.6;font-weight:500}.school-event p{font-size:11px;line-height:1.9}.school-event>small{font-size:10px;color:#959081;line-height:1.8}.school-links{display:flex;justify-content:space-between;align-items:center;margin-top:15px;font-size:10px;color:#84765e}.school-links button{background:#eae4d7;border-radius:6px;padding:7px 9px}.school-official{font-size:11px;display:block;margin:22px 0}.faculty-card{border-radius:13px;padding:19px;background:#ede9df;margin:24px 0}.faculty-card h2{font-size:22px;font-family:serif;font-weight:500}.faculty-card small{font-size:10px;line-height:1.6;color:#8e8777}.faculty-card p{font-size:12px;line-height:1.9}.faculty-card a,.faculty-card button{display:block;font-size:11px;margin:14px 0}.faculty-card button{margin-left:auto;color:#8d8066}.past-events summary{cursor:pointer;color:#a29b8c;font-size:11px}.auto-record-card{padding:12px;background:#e9edf1;border-radius:10px;margin:14px 0;display:flex;gap:9px;align-items:center}.auto-record-card>span{font-size:10px;line-height:1.7;flex:1}.auto-record-card strong{display:block;color:#3c689a;font-size:11px}.auto-record-card button{font-size:10px;color:#446c9a;text-decoration:underline;white-space:nowrap}.auto-record-status{display:inline-flex;align-items:center;gap:5px}.auto-record-status:before{content:'';height:6px;width:6px;border-radius:50%;background:#557ca9}.auto-mobile-bar{background:#e5ebf1;border-bottom:1px solid #d2dbe6;padding:10px;color:#376190;font-size:10px}.quest-dialog{width:min(94vw,660px)!important;max-width:660px!important;max-height:95dvh!important;background:#222737!important;color:#e9e6d4!important;padding:0!important;border-radius:18px!important;border:1px solid #60687b!important}.quest-dialog #dialog-content{padding:25px!important}.quest-dialog .modal-close{position:absolute;right:10px;top:10px;color:#ced6df;background:#ffffff0d;z-index:5}.quest-overline{font-size:10px;letter-spacing:.12em;color:#c7b992;padding-right:25px}.quest-battle h2{font-size:25px;font-weight:500;margin:20px 0 10px}.quest-fiction{font-size:10px;line-height:1.8;color:#adb4c4;margin-bottom:22px}.enemy-select{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.enemy-select button{padding:12px 4px;border-radius:12px;border:1px solid #42495c;background:#2b3145;min-width:0}.enemy-select button.selected{border-color:#e2c688;background:#393b49}.enemy-select svg{width:100%;height:110px;stroke:none}.enemy-select strong{display:block;font-size:12px;margin:8px 0;color:#e1d7bc}.enemy-select small{font-size:10px;color:#a4aeb8}.battle-instructions{font-size:11px;line-height:1.85;color:#b6bdcb;margin:18px 0;padding:14px;background:#2c3245;border-radius:10px}.battle-instructions p{margin:6px 0}.battle-easy{font-size:11px;display:flex;align-items:center;gap:8px;margin:20px 0}.quest-primary,.quest-secondary{width:100%;padding:13px;border-radius:8px;font-size:13px;background:#e8cc91;color:#343b3b;min-height:44px}.quest-secondary{background:#343c50;color:#d3d9df;margin-top:9px}.quest-foot{display:block;text-align:center;font-size:9px;color:#9aa6b4;line-height:1.8;margin-top:14px}.quest-top{display:flex;align-items:center;justify-content:space-between;padding-right:28px;font-size:10px;color:#c3b28b}.quest-top button{font-size:10px;background:#3b4357;padding:8px 13px;border-radius:6px;color:#ccd2d8}.quest-arena{position:relative;display:flex;align-items:center;justify-content:space-around;gap:8px;background:linear-gradient(#2b3147 0 73%,#304358 73% 75%,#293747 75%);margin:14px -25px;padding:17px 20px 18px;overflow:hidden}.quest-fighter{width:42%;text-align:center;z-index:2}.quest-fighter>b{font-size:12px;min-height:30px;display:block;line-height:1.5}.quest-fighter svg{width:155px;height:155px;max-width:100%;stroke:none;fill:none}.quest-fighter>small{font-size:9px;display:block;margin-top:8px;color:#abbbcd}.quest-health{height:7px;background:#3b5470;border-radius:5px;overflow:hidden;margin:0 8px}.quest-health i{background:#84a5ca;display:block;height:100%;transition:width .3s}.foe .quest-health i{background:#d6a171}.quest-vs{font:22px Georgia;color:#c7b382}.quest-status{font-size:12px;line-height:1.8;min-height:65px;padding:12px;border:1px solid #525d73;background:#282e40;border-radius:9px}.quest-reaction{padding:14px 0;min-height:45px;text-align:center}.quest-reaction>b{font-size:12px;color:#e8cc91}.call-order{display:flex;justify-content:center;gap:5px;margin:12px 0}.call-order span{font-size:11px;border:1px solid #66708a;border-radius:5px;padding:5px}.call-order .next{background:#e4c78d;color:#2a3643}.call-order .done{color:#7b9ec6;opacity:.6;text-decoration:line-through}.call-clock{height:5px;background:#45506a;border-radius:8px;margin:10px 0;overflow:hidden}.call-clock i{display:block;background:#d9ab84;height:100%;width:100%}.call-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.call-buttons button{min-height:43px;background:#414c64;color:#dbe2e9;border-radius:6px;font-size:12px}.timing-gauge{position:relative;height:25px;margin:14px 5px 13px;border-radius:5px;background:#495069;overflow:hidden}.timing-target{position:absolute;top:0;bottom:0;background:#7297c2}.timing-gauge>i{position:absolute;top:0;width:4px;height:100%;background:#fff6ce;box-shadow:0 0 7px #fff}.quest-commands{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.quest-commands button{background:#374056;padding:11px 3px;border:1px solid #505b71;border-radius:8px;min-height:52px}.quest-commands strong{font-size:11px;font-weight:500;display:block;color:#e2d9bb}.quest-commands small{font-size:8px;display:block;margin-top:5px;color:#a9b3bd}.quest-commands button:disabled{opacity:.35}.quest-hint{font-size:10px;color:#99abc0}.quest-result{text-align:center;font-size:20px;color:#e7cc91}.victory .foe{opacity:.35}.noodle-projectile{position:absolute;right:23%;top:50%;font-size:35px;color:#eacf8b;z-index:4;pointer-events:none}.is-paused{opacity:.55}.arcade-shortcut{margin-top:10px;width:100%;display:flex;justify-content:space-between;padding:13px;background:#2c3449;border-radius:10px;color:#dac99c;font-size:11px}.staff-link{font-size:10px;color:#8d8066;display:block;margin:12px 0}@keyframes goat-chew{to{transform:rotate(-3deg) translateY(2px)}}@keyframes paper-eat{0%{opacity:1;transform:translate(-50px,30px) rotate(-20deg)}60%{opacity:1;transform:translate(30px,0) scale(.6)}100%{opacity:0;transform:translate(35px,0) scale(0)}}@media(max-width:800px){.quest-dialog #dialog-content{padding:19px!important}.quest-arena{margin:13px -19px;padding:15px 12px}.quest-fighter svg{height:125px;width:125px}.quest-fighter>b{font-size:11px}.quest-battle h2{font-size:22px}.enemy-select svg{height:88px}.enemy-select strong{font-size:10px}.enemy-select small{font-size:9px}.battle-instructions{font-size:10px;padding:11px}.quest-commands{gap:5px}.quest-commands strong{font-size:10px}.quest-commands small{font-size:8px}.quest-status{font-size:11px;min-height:65px}.quest-dialog .modal-close{right:5px;top:5px}.pet-care strong{font-size:12px}.pet-caption,.goat-vent p{font-size:11px}.auto-record-card{font-size:11px}.goat-vent textarea{font-size:14px}.school-event p{font-size:12px}.school-date{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.goat-garden *,.quest-battle *{animation:none!important;transition:none!important}}
+
+@media(max-width:800px){.life-view.mobile-show .sidebar{height:calc(100dvh - 130px);max-height:none}}
+.life-shortcut{width:100%;display:flex;align-items:center;gap:12px;padding:16px 12px;border-radius:13px;background:#e6e9ed;text-align:left;margin:12px 0}.life-shortcut>span{font-size:30px;width:43px;text-align:center;color:#607ea0}.life-shortcut>div{flex:1;min-width:0}.life-shortcut small,.life-shortcut strong,.life-shortcut em{display:block}.life-shortcut small{font-size:9px;color:#798a9e}.life-shortcut strong{font-size:13px;margin:6px 0;font-weight:500}.life-shortcut em{font-size:10px;font-style:normal;color:#71859c;line-height:1.6}.life-shortcut>b{color:#77899d;font-weight:400}.anniversary-home{background:#f0e7e5}.anniversary-home>span{color:#b18f91}.mouse-room{background:linear-gradient(#eee8dc 0 73%,#d5c8b1 73%);min-height:258px}.mouse-room>svg{height:195px}.mouse-door{position:absolute;right:22px;bottom:64px;width:55px;height:72px;background:#c3b69c;border-radius:40px 40px 0 0;box-shadow:inset 6px 2px 0 #0001}.mouse-away .mouse-door{background:#7f7869;box-shadow:inset 8px 3px 0 #0002}.mouse-footprints{font-size:65px;line-height:195px;display:block;color:#a4967d;letter-spacing:12px}.mouse-outing{font-size:11px;color:#8d8064;display:block;margin:18px 0 0 auto;text-decoration:underline}.workplace-goat{background:#e3e9f0}.workplace-goat>svg{height:150px;width:150px}.anniversary-card{border-bottom:1px solid #e5ded9;padding:25px 0}.anniversary-card>span{font-size:11px;color:#a17d7d}.anniversary-card h2{font-size:20px;font-weight:500;margin:10px 0}.anniversary-card p{font-size:12px;line-height:1.8;white-space:pre-wrap}.anniversary-card>small{font-size:10px;color:#9c9187}.anniversary-card .button-row{flex-wrap:wrap}.anniversary-card .text-btn{font-size:10px}.mystery-highlights{padding:14px;background:#ece8ef;border-radius:10px;margin-bottom:16px}.mystery-highlights>small{font-size:10px;color:#917c9d}.mystery-highlights button{display:block;text-align:left;padding:10px 0;font-size:12px;color:#6f5b80}.mystery-highlights p{font-size:10px;line-height:1.8;color:#8d7e97;margin:4px 0}.nutrition-profile{padding:14px;border:1px solid #d4dbe4;border-radius:12px;margin:20px 0}.nutrition-profile>b{font-size:12px;font-weight:500}.nutrition-profile label{display:block;font-size:10px;color:#607995;margin-top:12px}.nutrition-profile select{display:block;width:100%;margin-top:7px;padding:10px 5px;border:1px solid #d4dae1;background:#fffef7;border-radius:5px;font-size:11px;color:#364f6b}.nutrition-profile>small{display:block;font-size:9px;line-height:1.85;color:#7b8da1;margin-top:12px}.nutrition-date{font-size:11px;display:flex;justify-content:space-between;align-items:center;margin:20px 0}.nutrition-date input{max-width:62%;border:1px solid #d5dae0;padding:9px 5px;border-radius:7px;background:#fffef9;min-width:0}.nutrition-tabs{display:flex;gap:6px;margin-bottom:12px}.nutrition-tabs button{flex:1;font-size:11px;padding:11px 5px;background:#e7ebef;border-radius:7px}.nutrition-tabs button[aria-pressed=true]{background:#3f6692;color:#fff}.nutrition-summary{background:#dfe6ef;border:1px solid #cdd8e5;border-radius:15px;padding:19px}.nutrition-summary>small{font-size:10px;color:#6783a3}.nutrition-summary>div:nth-child(2){margin:14px 0 6px;display:flex;align-items:baseline;gap:8px}.nutrition-summary>div>strong{font-size:31px;font-weight:400;letter-spacing:-.04em}.nutrition-summary>div>span{font-size:10px;color:#7187a0}.nutrition-summary>p{font-size:10px;color:#6b85a2;margin:8px 0 17px}.macro-mini{display:flex;justify-content:space-between;gap:8px;border-top:1px solid #c6d1dd;padding-top:13px}.macro-mini>span{flex:1;font-size:9px!important}.macro-mini b{display:block;font-size:13px;color:#395e88;font-weight:500;margin-top:7px;overflow-wrap:anywhere}.complete-day{display:flex;align-items:flex-start;gap:5px;font-size:10px;line-height:1.8;color:#6b829c;margin:17px 0}.complete-day input{margin-top:3px}.nutrition-insights h2,.food-picker h2{font-size:14px;font-weight:500}.nutrition-insights p{font-size:11px;line-height:1.95;color:#637992;padding-left:12px;border-left:2px solid #a9c0da}.nutrition-detail,.food-pantry,.nutrition-sources{border-top:1px solid #d7dde4;margin:24px 0;padding-top:17px}.nutrition-detail>summary,.food-pantry>summary,.nutrition-sources>summary{font-size:12px;cursor:pointer;line-height:1.8;color:#396496}.nutrient-row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid #dfe3e7;font-size:11px}.nutrient-row>span{flex:1}.nutrient-row small{display:block;font-size:9px;line-height:1.7;color:#8597ab;margin-top:4px}.nutrient-row>b{text-align:right;font-weight:500;max-width:53%}.nutrient-row>b small{display:inline}.nutrient-row em{display:block;font-style:normal;font-size:9px;color:#607ea1;margin-top:4px}.food-result{display:flex;gap:12px;justify-content:space-between;align-items:center;text-align:left;width:100%;padding:14px 0;border-bottom:1px solid #dce2e8}.food-result strong{font-size:12px;line-height:1.65;font-weight:500;display:block}.food-result small{font-size:9px;color:#7b90a9;display:block;margin-top:7px}.food-result>b{color:#6286b0;font-weight:400;font-size:18px}.food-picker .secondary{margin-top:14px;font-size:11px}.food-entry{padding:16px 0;border-bottom:1px solid #dbe0e6}.food-entry span{font-size:9px;color:#708ba9}.food-entry strong{display:block;font-size:12px;margin:7px 0;line-height:1.7}.food-entry small{font-size:10px;color:#798b9f}.food-entry-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:8px}.food-entry-actions button{font-size:10px;padding:7px 0;color:#547ba8}.nutrition-sources p{font-size:10px;line-height:1.9;color:#73869c}.nutrition-sources a{font-size:10px;display:block;color:#557396;margin:13px 0}.nutrition-sources>small{font-size:9px;color:#8499b1;display:block;line-height:1.8}.form-two{display:flex;gap:12px}.form-two>label{flex:1;min-width:0}.form-two input,.form-two select{min-width:0;width:100%}.nutrient-inputs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.nutrient-inputs label{font-size:10px;line-height:1.7;color:#73889f}.nutrient-inputs input{width:100%;display:block;margin-top:5px;border:1px solid #d1d9e2;background:#fffdf7;padding:10px;border-radius:6px;min-width:0}.nutrition-form summary{font-size:11px;color:#6785a8;cursor:pointer}.nutrition-form a{font-size:10px;color:#5478a1}.food-preview{padding:12px;background:#e4eaf1;border-radius:6px;color:#3b689b;font-size:12px}.nutrition-form .field input[readonly]{color:#7a8ea5;background:#ecf0f5}.nutrition-form h2{font-size:21px;line-height:1.6}.nutrition-form .field{font-size:12px}.nutrition-form input,.nutrition-form select{font-size:14px}
+@media(max-width:800px){.life-shortcut strong{font-size:14px}.life-shortcut em{font-size:11px}.nutrition-profile>small{font-size:10px}.nutrition-insights p{font-size:12px}.nutrition-date input,.nutrition-form input,.nutrition-form textarea,.nutrition-form select,#anniversary-form input,#anniversary-form textarea,.goat-vent textarea{font-size:16px}.nutrient-row{font-size:12px}.food-result strong{font-size:13px}.complete-day{font-size:11px}.nutrition-summary>div>strong{font-size:35px}.nutrition-form h2{font-size:20px}}
+
+.enemy-description{color:#b6bdcb;font-size:11px;line-height:1.8;margin:14px 0}.noodle-projectile svg{width:85px;height:50px;stroke:none}
+.release-badge{font-size:10px;letter-spacing:.02em;border:1px solid #d3d9df;background:#fff;border-radius:20px;padding:8px 11px;color:#3b5c82;white-space:nowrap}.release-badge.has-update{background:#30557f;color:#fff;border-color:#30557f}.release-changes{font-size:12px;line-height:1.9;padding-left:19px;color:#486381}.release-changes li{margin:8px 0}.release-settings{display:flex;width:100%;padding:16px;background:#dfe6ed;align-items:center;justify-content:space-between;text-align:left;border-radius:12px;margin:12px 0}.release-settings strong,.release-settings small{display:block}.release-settings strong{font-size:13px}.release-settings small{font-size:10px;margin-top:5px;color:#5a718c}.release-settings b{font-size:10px}.home-quick-menu{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:17px 0 12px}.home-quick-menu button{border:1px solid #dbe0e5;background:#fffefb;border-radius:13px;padding:13px 11px;text-align:left;min-height:101px;transition:background .15s}.home-quick-menu button:hover{background:#e9edf2}.home-quick-menu button svg{display:block;width:21px;height:21px;color:#456d9a;margin-bottom:9px}.home-quick-menu strong{font-size:12px;display:block;font-weight:600;letter-spacing:0}.home-quick-menu small{font-size:9px;display:block;margin-top:5px;color:#6c7f94;line-height:1.5;letter-spacing:0}.home-quick-menu .quick-food{background:#e7ecf2;border-color:#d4dce5}.home-quick-menu .quick-pet{background:#f0eae0;border-color:#e4dbce}.home-quick-menu .quick-stories{background:#eeeaf3;border-color:#e2dce9}.home-quick-menu .quick-stories svg{color:#897394}.home-utilities{display:flex;justify-content:space-between;gap:6px;border-bottom:1px solid #d8dee4;padding:0 0 16px;margin-bottom:17px}.home-utilities button{font-size:10px;color:#4f7096;display:flex;align-items:center;gap:4px;padding:5px 0}.home-utilities svg{height:15px;width:15px}.mouse-room{background:linear-gradient(#f0ece4 0 65%,#dfd7c6 65%);min-height:268px;padding-top:3px}.mouse-room>svg{height:238px;width:268px;max-width:100%;display:block;margin:-12px auto -18px}.mouse-room .goat-bubble{position:relative;z-index:3;font-size:11px;background:#fffaf0}.mouse-door{width:44px;height:49px;right:23px;bottom:79px;background:#d1c5ad;box-shadow:inset 4px 3px 0 #0000000b;border-radius:28px 28px 0 0}.mouse-nest{position:absolute;left:14px;bottom:69px;width:77px;height:26px;background:repeating-linear-gradient(12deg,#d4c4a4 0 3px,#eee3cb 3px 6px);border-radius:50%;transform:rotate(-8deg);opacity:.7}.mouse-footprints{line-height:202px}.mouse-away .mouse-nest{opacity:.5}
+@media(max-width:800px){.home-heading{margin-bottom:0}.home-heading h1{font-size:24px;margin:4px 0}.home-heading p{font-size:11px;margin:6px 0 14px}.home-quick-menu{gap:10px;margin-top:14px}.home-quick-menu button{min-height:98px;padding:12px 13px}.home-quick-menu strong{font-size:13px}.home-quick-menu small{font-size:9px}.home-quick-menu button svg{margin-bottom:8px}.nav-btn span{font-size:9px}.release-badge{padding:7px 10px}.mouse-room>svg{width:290px;height:245px}.life-view .sidebar{height:calc(100dvh - 130px);max-height:none}}
+/* Daily context and the small optional companion */
+.header-clock{font-size:13px;letter-spacing:.02em;color:#446183;font-variant-numeric:tabular-nums;white-space:nowrap}.today-card{border:1px solid #d9dfe5;background:#fffefb;border-radius:15px;padding:16px 14px 10px;margin:16px 0}.today-top{display:flex;align-items:center;gap:12px;justify-content:space-between;padding-bottom:13px;border-bottom:1px solid #e5eaf0}.today-clock time{font-size:30px;line-height:1;letter-spacing:-.025em;font-variant-numeric:tabular-nums;display:block;font-weight:500}.today-clock>span{display:block;font-size:9px;margin-top:8px;color:#74879d;white-space:nowrap}.today-weather{display:flex;gap:7px;align-items:center}.weather-symbol{font-size:25px;line-height:1}.today-weather strong{display:block;font-size:20px;font-weight:500;white-space:nowrap}.today-weather strong small{font-size:10px;font-weight:400;display:block;margin:4px 0}.today-weather div>small{display:block;font-size:8px;color:#74879d;margin-top:4px}.today-weather button{font-size:18px;padding:8px 0 8px 7px;color:#738aa4}.today-weather button:disabled{opacity:.4}.today-food{padding-top:14px}.today-question{display:flex;gap:8px;align-items:center;justify-content:space-between}.today-question strong{font-size:14px;line-height:1.6;letter-spacing:0}.today-question button{font-size:9px;color:#74879d;text-decoration:underline;flex-shrink:0}.today-food-note{font-size:10px;line-height:1.6;color:#7589a0;margin:5px 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.usual-foods{display:flex;gap:6px;flex-wrap:wrap}.usual-foods button{font-size:10px;background:#e4eaf1;border:1px solid #d3dce6;padding:9px 8px;border-radius:8px;color:#30547e}.usual-foods button:last-child{background:transparent;border-color:#dfe3e7;color:#697d93}.weather-hint{font-size:10px;line-height:1.7;color:#5b7593;margin:12px 0 1px}.weather-credit{display:block;text-align:right;font-size:8px;color:#8b9bae;margin-top:11px}.weather-credit a{color:inherit}.goat-extra{margin:28px 0 5px;border-top:1px solid #d8dee4;padding-top:15px;color:#657b94}.goat-extra summary{font-size:11px;cursor:pointer}.goat-extra p{font-size:11px;line-height:1.8}.goat-extra .secondary{font-size:11px;padding:10px 14px}.mouse-emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:105px;display:inline-block;line-height:1;letter-spacing:0;font-weight:400}.mouse-room{background:linear-gradient(#f4f3ed 0 76%,#e9e6db 76%);padding:30px 15px 14px;min-height:236px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.mouse-room>.mouse-emoji{font-size:112px;padding:0 0 18px;display:block;position:relative;z-index:2}.mouse-room .goat-bubble{width:100%;background:#fffcf6;margin-top:8px}.pet-home-art .mouse-emoji{font-size:50px}.mouse-room.eating>.mouse-emoji{animation:goat-chew .25s 6 alternate}.mouse-footprints{line-height:130px;font-size:45px;min-height:130px}
+@media(max-width:800px){.header-right{gap:8px}.header-right .icon-btn{display:none}.header-clock{font-size:13px}.home-quick-menu button{min-height:85px}.today-card{margin-top:12px}.today-top{gap:10px}.today-clock time{font-size:32px}.today-weather strong{font-size:20px}.today-food-note{font-size:10px}.mouse-room{min-height:238px}}
+@media(prefers-reduced-motion:reduce){.mouse-room.eating>.mouse-emoji{animation:none}}
+.map-pin.uncertain-pin{background:#fffaf0;color:#a47d46;border:2px dashed #b68e56;box-shadow:0 0 0 4px #fff9,0 2px 8px #3332}.uncertain-pin span{font-size:19px;font-weight:600}.position-evidence{padding:10px 12px;border-radius:8px;font-size:11px;line-height:1.7;background:#e2e8ee;color:#38618f;margin-top:16px}.position-unverified{background:#f5eddb;color:#947542;border:1px dashed #c8aa6d}
+
+/* ---- ねずみくん：シンプルなイラストと動き ---- */
+.mouse-stage{display:block;position:relative;z-index:2;line-height:0}
+svg.mouse-figure{stroke:none;stroke-width:1;fill:none;color:#33506f}
+.mouse-room>.mouse-stage{width:min(100%,300px);padding:0 0 10px}
+.mouse-room>.mouse-stage>svg.mouse-figure{width:100%;height:auto;display:block;overflow:visible}
+.pet-home-art .mouse-stage{width:68px}
+.pet-home-art svg.mouse-figure{width:68px;height:auto;stroke:none}
+.mouse-room{background:linear-gradient(#efece5 0 76%,#e2ded3 76%);padding:30px 15px 14px;min-height:238px}
+.mouse-room .mouse-nest{left:16px;bottom:72px;z-index:1}
+.mouse-room .mouse-door{right:20px;bottom:76px;z-index:1}
+.mouse-figure .m-body{transform-box:fill-box;transform-origin:50% 100%;animation:mouse-breathe 2.8s ease-in-out infinite}
+.mouse-figure .m-ear{transform-box:fill-box;transform-origin:50% 92%;animation:mouse-ear 5.6s ease-in-out infinite}
+.mouse-figure .m-tail{transform-box:fill-box;transform-origin:0 40%;animation:mouse-tail 3.4s ease-in-out infinite}
+.mouse-figure .m-eye{transform-box:fill-box;transform-origin:50% 55%;animation:mouse-blink 4.3s infinite}
+.mouse-figure .m-nose{transform-box:fill-box;transform-origin:100% 50%;animation:mouse-sniff 1.3s ease-in-out infinite}
+.mouse-figure .m-shadow{transform-box:fill-box;transform-origin:50% 50%}
+@keyframes mouse-breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.012,1.035)}}
+@keyframes mouse-ear{0%,84%,100%{transform:rotate(0)}88%{transform:rotate(-13deg)}93%{transform:rotate(6deg)}}
+@keyframes mouse-tail{0%,100%{transform:rotate(0)}50%{transform:rotate(-8deg)}}
+@keyframes mouse-blink{0%,91%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+@keyframes mouse-sniff{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-.7px,.5px) rotate(-1.5deg)}}
+/* えさ・お水：ふだんは皿だけ。食べるとかけらが飛び散り、たねが減る */
+.mouse-figure .m-water{display:none}
+.mouse-figure .m-crumbs circle{opacity:0;transform-box:fill-box;transform-origin:center}
+.mouse-room.eating .m-body{animation:mouse-chew .26s ease-in-out 10 alternate}
+.mouse-room.eating .m-crumbs circle{animation:mouse-crumb .9s ease-out 3}
+.mouse-room.eating .m-crumbs circle:nth-child(2){animation-delay:.12s}
+.mouse-room.eating .m-crumbs circle:nth-child(3){animation-delay:.2s}
+.mouse-room.eating .m-crumbs circle:nth-child(4){animation-delay:.3s}
+.mouse-room.eating .m-crumbs circle:nth-child(5){animation-delay:.07s}
+.mouse-room.eating .m-crumbs circle:nth-child(6){animation-delay:.25s}
+.mouse-room.eating .m-crumbs circle:nth-child(7){animation-delay:.17s}
+.mouse-room.eating .m-crumbs circle:nth-child(8){animation-delay:.33s}
+.mouse-room.eating .m-seed{animation:mouse-seed 2.6s forwards}
+.mouse-room.eating .m-seed:nth-child(3){animation-delay:.6s}
+.mouse-room.eating .m-seed:nth-child(4){animation-delay:1.3s}
+@keyframes mouse-chew{from{transform:translateY(0) rotate(0)}to{transform:translateY(2px) rotate(-2.5deg)}}
+@keyframes mouse-crumb{0%{opacity:0;transform:translate(0,0) scale(.5)}12%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.1)}}
+@keyframes mouse-seed{0%,55%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.2)}}
+.mouse-room.drinking .m-dish{display:none}
+.mouse-room.drinking .m-water{display:block}
+.mouse-room.drinking .m-body{animation:mouse-chew .32s ease-in-out 8 alternate}
+.mouse-room.drinking .m-drop{opacity:0;transform-box:fill-box;transform-origin:center;animation:mouse-crumb 1s ease-out 3}
+.mouse-room.drinking .m-drop:nth-child(4){animation-delay:.25s}
+.mouse-room.drinking .m-drop:nth-child(5){animation-delay:.5s}
+/* なでる：うれしくて跳ねる */
+.mouse-room.happy .m-body{animation:mouse-hop .55s cubic-bezier(.3,0,.25,1) 3}
+.mouse-room.happy .m-shadow{animation:mouse-hop-shadow .55s cubic-bezier(.3,0,.25,1) 3}
+.mouse-room.happy .m-ear{animation:mouse-ear-flap .28s ease-in-out 6 alternate}
+@keyframes mouse-hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-18px) scale(.98,1.04)}}
+@keyframes mouse-hop-shadow{0%,100%{transform:scale(1);opacity:.1}40%{transform:scale(.8);opacity:.05}}
+@keyframes mouse-ear-flap{from{transform:rotate(-10deg)}to{transform:rotate(8deg)}}
+/* おなかがすいた：耳が垂れて、ゆっくり */
+.mouse-room.mouse-hungry .m-ear{animation:none;transform:rotate(17deg)}
+.mouse-room.mouse-hungry .m-body{animation-duration:4.2s}
+.mouse-room.mouse-hungry .m-tail{animation:none}
+.mouse-room.mouse-cheerful .m-tail{animation-duration:1.6s}
+@media(prefers-reduced-motion:reduce){.mouse-figure *{animation:none!important}}
+
+/* ---- 足りていない栄養 ---- */
+.nutrition-gaps{margin:16px 0;padding:14px 14px 10px;border-radius:14px;background:#f1f4f7;border:1px solid #d8dfe7}
+.nutrition-gaps h2{font-size:13px;margin:0 0 10px;letter-spacing:.02em}
+.gap-energy{display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center;font-size:11px;color:#3e5c7e;padding-bottom:10px;margin-bottom:8px;border-bottom:1px solid #dce3ea}
+.gap-energy b{font-weight:500;font-variant-numeric:tabular-nums}
+.gap-energy i,.gap-row i{grid-column:1/-1;display:block;height:5px;border-radius:5px;background:#d7dee7;overflow:hidden}
+.gap-energy em,.gap-row em{display:block;height:100%;background:#6a90bb;border-radius:5px}
+.gap-row{display:grid;grid-template-columns:1fr;gap:5px;padding:9px 0;border-bottom:1px dashed #dae1e8}
+.gap-row:last-of-type{border-bottom:0}
+.gap-head{display:flex;justify-content:space-between;align-items:baseline;font-size:12px}
+.gap-head span small,.gap-energy span small{font-size:9px;color:#8595a8;margin-left:4px}
+.gap-head b{font-weight:600;font-variant-numeric:tabular-nums;color:#405a77}
+.gap-low em{background:#d9826a}.gap-mid em{background:#e2b55a}.gap-near em{background:#6a90bb}
+.gap-low .gap-head b{color:#b35e43}.gap-mid .gap-head b{color:#9a7a2a}
+.gap-foods{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.gap-foods small{font-size:10px;line-height:1.6;color:#667a90}
+.gap-foods button{flex-shrink:0;font-size:10px;padding:6px 9px;border-radius:7px;background:#fff;border:1px solid #c9d2dd;color:#30547e}
+.gap-ok{font-size:12px;color:#3e5c7e;margin:6px 0}
+.gap-salt{font-size:11px;line-height:1.7;color:#8a5a3a;background:#f7eee4;border-radius:8px;padding:8px 10px;margin:10px 0 4px}
+.gap-done{font-size:10px;color:#74879d;line-height:1.7;margin:10px 0 2px}
+
+/* ---- 19時の晩ごはん相談 ---- */
+.today-card.dinner-time{border-color:#d9c9a8;background:linear-gradient(#fffdf7,#fbf5e8)}
+.dinner-ask{font-size:15px;line-height:1.6;margin:8px 0 2px;color:#3a516b;font-weight:500}
+.dinner-note{-webkit-line-clamp:3}
+.dinner-ideas button{background:#fff;border-color:#e2d8c2}
+.dinner-ideas button:first-child{background:#405a77;color:#fff;border-color:#405a77}
+.dinner-ideas button:last-child{background:transparent;color:#697d93;border-color:#dfe3e7}
+.dinner-notify{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:space-between;margin-top:12px;padding-top:9px;border-top:1px dashed #e6e3d6;font-size:9px;color:#74879d}
+.dinner-notify button{font-size:9px;text-decoration:underline;color:#405a77}
+.dinner-notify a{font-size:9px;color:#405a77}
+.setting-group a.ics-link{display:flex;width:100%;box-sizing:border-box;margin:4px 0;text-decoration:none}
+
+/* ---- おかえりなさい ---- */
+.welcome-card{margin:14px 0 4px;padding:18px 16px 14px;border-radius:16px;background:linear-gradient(160deg,#fff8ef,#f7ebdd);border:1px solid #ead9c2;color:#4a4036}
+.welcome-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.welcome-head .eyebrow{color:#a0774f}
+.welcome-head .text-btn{font-size:10px;color:#9a8468;text-decoration:underline}
+.welcome-card h2{font-size:26px;letter-spacing:.01em;margin:6px 0 4px;color:#b8563c}
+.welcome-card>p{font-size:12px;line-height:1.8;margin:0 0 12px;color:#6a5a4b}
+.evening-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.evening-steps button{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:11px 10px;border-radius:12px;background:#fffdf9;border:1px solid #ead9c2;text-align:left;color:#4a4036;transition:transform .15s}
+.evening-steps button:active{transform:scale(.97)}
+.evening-steps .step-no{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;background:#f1e3d1;color:#9a6a45;font-variant-numeric:tabular-nums}
+.evening-steps strong{font-size:13px;font-weight:600}
+.evening-steps small{font-size:9px;color:#9a8468;line-height:1.5}
+.evening-steps button[aria-pressed="true"]{background:#b8563c;border-color:#b8563c;color:#fff}
+.evening-steps button[aria-pressed="true"] .step-no{background:#fff;color:#b8563c}
+.evening-steps button[aria-pressed="true"] small{color:#f6d9cf}
+.welcome-done h2{color:#6a5a4b}
+.evening-dinner{display:block;margin:10px 0 0 auto;font-size:11px;color:#9a6a45;text-decoration:underline}
+.blanket-corner{margin-top:14px;padding:13px 13px 10px;border-radius:12px;background:#fffdf9;border:1px dashed #e4cfb4}
+.blanket-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.blanket-head .eyebrow{color:#a0774f;width:100%}
+.blanket-head strong{font-size:17px;font-weight:600;color:#4a4036;font-variant-numeric:tabular-nums}
+.blanket-head small{font-size:9px;color:#a99680}
+.blanket-stats{display:block;margin-top:9px;font-size:10px;color:#9a6a45}
+.blanket-corner .pet-caption{margin:8px 0 0;color:#a99680}
+.blanket-mini{margin:12px 0 2px;padding:11px 14px;border-radius:12px;background:#f9f2e8;border:1px solid #ead9c2;display:grid;gap:4px}
+.blanket-mini .eyebrow{color:#a0774f}
+.blanket-mini strong{font-size:13px;font-weight:600;color:#4a4036}
+.tadaima-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;font-size:10px;color:#8c927f}
+.tadaima-row button{font-size:11px;padding:7px 11px;border-radius:8px;background:#fff6ec;border:1px solid #ead9c2;color:#9a6a45}
+
+/* ---- ホーム画面に追加 ---- */
+.install-card{position:relative;margin:12px 0 2px}
+.install-main{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:13px 40px 13px 14px;border-radius:13px;background:#eef1f5;border:1px solid #dde3ea;color:#33506f}
+.install-main>svg:first-child{width:22px;height:22px;flex-shrink:0}
+.install-main span{flex:1}
+.install-main strong{display:block;font-size:12px;font-weight:600}
+.install-main small{display:block;font-size:10px;color:#6e7986;margin-top:3px;line-height:1.5}
+.install-dismiss{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;color:#8a95a4;display:flex;align-items:center;justify-content:center}
+.install-dismiss svg{width:14px;height:14px}
+.install-steps{margin:10px 0 6px;padding-left:20px;font-size:12px;line-height:1.9;color:#3b4652}
+.install-steps li{margin:4px 0}
+.install-steps strong{font-weight:600;color:#33506f}
+
+/* ---- 寒い夜のチェック ---- */
+.cold-checks{display:grid;gap:7px;margin-top:10px}
+.cold-checks button{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;background:#fffdf9;border:1px solid #e4cfb4;color:#4a4036;font-size:13px;text-align:left}
+.cold-checks button i{width:20px;height:20px;border-radius:50%;border:1.5px solid #d9c2a3;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-style:normal;color:#fff;flex-shrink:0}
+.cold-checks button[aria-pressed="true"]{background:#f1e6d7;color:#8a6a4a}
+.cold-checks button[aria-pressed="true"] i{background:#b8563c;border-color:#b8563c}
+.blanket-mini .cold-checks{grid-template-columns:repeat(3,1fr);gap:6px}
+.blanket-mini .cold-checks button{padding:8px 6px;font-size:10px;gap:6px;flex-direction:column;align-items:center;text-align:center}
+.blanket-mini .cold-checks button i{width:16px;height:16px;font-size:9px}
+/* ---- ねずみ：体型・威嚇・睡眠・掃除機 ---- */
+.mouse-room .mouse-stage>svg.mouse-figure{transform-origin:50% 100%;transition:transform .6s ease}
+.mouse-room.mouse-fat .mouse-stage>svg.mouse-figure{transform:scale(1.16,1.1)}
+.mouse-room.mouse-thin .mouse-stage>svg.mouse-figure{transform:scale(.9,.97)}
+.mouse-room.mouse-angry .m-ear{animation:none;transform:rotate(-38deg)}
+.mouse-room.mouse-angry .m-eye{animation:none;transform:scaleY(.4)}
+.mouse-room.mouse-angry .m-tail{animation:none;transform:rotate(14deg)}
+.mouse-room.mouse-angry .m-body{animation:mouse-bristle .18s ease-in-out 6 alternate}
+.mouse-room.mouse-angry .m-dish{display:none}
+.mouse-room.mouse-angry .goat-bubble{background:#fbeae4;color:#8a4a3a}
+@keyframes mouse-bristle{from{transform:scale(1.04,1.06) translateX(0)}to{transform:scale(1.05,1.07) translateX(-2px)}}
+.mouse-room.mouse-asleep{background:linear-gradient(#dcdbd6 0 76%,#cbc8bf 76%)}
+.mouse-room.mouse-asleep .mouse-door{opacity:.6}
+.mouse-sleeping .m-body{animation:mouse-breathe 3.8s ease-in-out infinite}
+.mouse-sleeping .m-z{opacity:0;transform-box:fill-box;transform-origin:center;animation:mouse-z 3.6s ease-in-out infinite}
+.mouse-sleeping .m-z:nth-of-type(2){animation-delay:1.2s}
+.mouse-sleeping .m-z:nth-of-type(3){animation-delay:2.4s}
+@keyframes mouse-z{0%{opacity:0;transform:translate(0,6px)}20%{opacity:.9}70%{opacity:.7}100%{opacity:0;transform:translate(6px,-14px)}}
+.mouse-room.mouse-alarm .m-ear{animation:none;transform:rotate(-30deg)}
+.mouse-room.mouse-alarm .mouse-stage>svg.mouse-figure{animation:mouse-startle .5s cubic-bezier(.3,0,.25,1) 2}
+@keyframes mouse-startle{0%,100%{transform:translateY(0)}40%{transform:translateY(-22px)}}
+.vacuum-stage{position:absolute;left:0;right:0;bottom:66px;height:48px;z-index:3;pointer-events:none}
+.vacuum-stage svg{width:92px;height:46px;position:absolute;left:0;top:0;animation:vacuum-pass 3.2s linear forwards;stroke:none}
+.vacuum-stage small{position:absolute;left:0;top:-14px;font-size:9px;color:#6e7986;animation:vacuum-pass 3.2s linear forwards;white-space:nowrap;padding-left:20px}
+@keyframes vacuum-pass{from{transform:translateX(105vw)}to{transform:translateX(-110px)}}
+.mouse-room{overflow:hidden}
+.weight-bar em{background:#c9a27a}
+.mouse-actions{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:flex-end;margin:14px 0 0}
+.mouse-actions .text-btn{font-size:11px;color:#6e7986;text-decoration:underline}
+.mouse-finds{margin:18px 0 6px;padding:13px 14px;border-radius:12px;background:#f3f1ea;border:1px solid #e6e1d4}
+.mouse-finds h2{font-size:12px;margin:0 0 8px}
+.mouse-finds ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.mouse-finds li{display:flex;justify-content:space-between;gap:8px;font-size:12px;padding:6px 0;border-bottom:1px dashed #e3ddcf}
+.mouse-finds li:last-child{border-bottom:0}
+.mouse-finds li small{color:#9a9589;font-variant-numeric:tabular-nums}
+.pet-meters{flex-wrap:wrap}
+.pet-meters>div{flex:1 1 40%}
+@media(prefers-reduced-motion:reduce){.vacuum-stage svg,.vacuum-stage small{animation-duration:.01s}}
+
+/* ---- ジム・運動ノルマ ---- */
+.map-pin.pin-gym{background:#4b6b8f;border-style:solid}
+.story-art.art-gym,.detail-art.art-gym{background:#e4eaf1;color:#4b6b8f}
+.gym-card{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:13px 14px;border-radius:13px;background:#eef1f5;border:1px solid #dde3ea;color:#33506f;margin:12px 0 2px}
+.gym-card>svg:first-child{width:22px;height:22px;flex-shrink:0}
+.gym-card span{flex:1}
+.gym-card strong{display:block;font-size:12px;font-weight:600}
+.gym-card small{display:block;font-size:10px;color:#6e7986;margin-top:3px;line-height:1.5}
+.gym-card i{font-style:normal;letter-spacing:3px;font-size:11px;color:#4b6b8f}
+.gym-card.gym-nudge{background:#fff4ea;border-color:#ecd6c0;color:#8a4a3a}
+.gym-card.gym-nudge i{color:#b8563c}
+.gym-card.gym-done{background:#e7efe6;border-color:#cfdccb;color:#3f5f44}
+.gym-card.gym-done i{color:#4f7a55}
+.gym-panel{border-color:#dde3ea}
+/* ---- ねずみ：石・ねだり ---- */
+.mouse-room.mouse-cursed{background:linear-gradient(#e6e3e9 0 76%,#d2cfd8 76%)}
+.mouse-room.mouse-cursed .mouse-stage>svg.mouse-figure{filter:saturate(.7)}
+.mouse-room.mouse-cursed .goat-bubble{background:#ede8f1;color:#5a4a6a}
+.stone-warning{margin:12px 0 0;padding:13px 14px;border-radius:12px;background:#ede8f1;border:1px solid #d9d0e2;color:#4a3f58}
+.stone-warning strong{display:block;font-size:13px}
+.stone-warning p{font-size:11px;line-height:1.7;margin:6px 0 10px;color:#6a5f78}
+.stone-warning .button-row{margin:0}
+.beg-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:12px 0 0;padding:10px 12px;border-radius:10px;background:#fbf3ea;border:1px solid #ead9c2;font-size:12px;color:#6a5a4b}
+.beg-row button{font-size:11px;padding:7px 11px;border-radius:8px;background:#fff;border:1px solid #ead9c2;color:#9a6a45;flex-shrink:0}
+.mouse-finds li.find-cursed span{color:#6a4a8a}
+.mouse-finds li small button{font-size:10px;margin-left:6px;text-decoration:underline;color:#6a4a8a}
+
+/* ---- 隠れている ---- */
+.mouse-room.mouse-hiding .mouse-door{display:none}
+.mouse-room.mouse-hiding .m-dish{display:none}
+.mouse-hiding-figure .m-eye{transform-box:fill-box;transform-origin:50% 50%;animation:mouse-blink 3.1s infinite}
+.mouse-hiding-figure .m-tail{transform-box:fill-box;transform-origin:100% 50%;animation:mouse-tail 2.2s ease-in-out infinite}
+.mouse-room.mouse-hiding .goat-bubble{background:#efece6;color:#6a645c}

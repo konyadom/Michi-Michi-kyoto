@@ -1,0 +1,18 @@
+export const ENEMIES={
+ salary:{name:'疲れきったサラリーマン',hp:360,attack:23,subtitle:'「それ、今日中で」の怨念が残っている。',moves:['未読メールの山','終電ダッシュ','差し戻し三連発'],reward:3},
+ student:{name:'暴れ大学生',hp:440,attack:28,subtitle:'提出まであと3時間。テンションだけが高い。',moves:['徹夜テンション','謎の胴上げ','単位くださいアタック'],reward:4},
+ ramen:{name:'コール番長',hp:680,attack:35,subtitle:'架空のラーメン店員ボス。コールは待ってくれない。',moves:['麺の投げつけ','追いコール','替え玉流星群'],reward:7}
+};
+const CALLS=[['ニンニク','ヤサイ'],['アブラ','カラメ','ニンニク'],['ヤサイ','ニンニクなし','アブラ']];
+export const CALL_OPTIONS=['ニンニク','ニンニクなし','ヤサイ','アブラ','カラメ','そのまま'];
+export function createBattle(kind='salary',easy=false){const foe=ENEMIES[kind]||ENEMIES.salary;return {kind:ENEMIES[kind]?kind:'salary',easy,foeMax:foe.hp,foeHp:foe.hp,hp:180,maxHp:180,turn:1,charges:3,phase:'ready',guard:false,pauseAt:null,log:'まずは行動を選んでください。',call:[],callIndex:0,combo:0};}
+export function battleProgress(s,now){return s.deadline?Math.max(0,Math.min(1,((s.pauseAt??now)-s.started)/(s.deadline-s.started))):0;}
+export function timingWindow(s){return s.easy?[.52,.84]:s.kind==='ramen'?[.71,.84]:[.59,.84];}
+function terminal(s){if(s.foeHp<=0){s.foeHp=0;s.phase='won';s.log='勝った！ 帰ったらヤギにも報告しよう。';return true;}if(s.hp<=0){s.hp=0;s.phase='lost';s.log='今日はここまで。もう一度挑戦できます。';return true;}return false;}
+function playerTurn(s){if(terminal(s))return;s.phase='ready';s.turn++;s.guard=false;s.deadline=0;}
+function takeHit(s,mult=1){const enemy=ENEMIES[s.kind],rage=s.foeHp<s.foeMax*.45?1.3:1;const damage=Math.round(enemy.attack*rage*(s.easy?.72:1)*(s.guard?.3:1)*mult);s.hp=Math.max(0,s.hp-damage);s.log+=' 銀くんに'+damage+'ダメージ。';s.combo=0;playerTurn(s);}
+function enemyTurn(s,now){if(terminal(s))return;const isCall=s.kind==='ramen'&&s.turn%2===1;s.phase=isCall?'call':'timing';s.started=now;s.deadline=now+(isCall?(s.easy?7000:3600):(s.easy?3600:s.kind==='ramen'?2100:2700));s.call=CALLS[Math.floor(s.turn/2)%CALLS.length].slice();s.callIndex=0;s.move=ENEMIES[s.kind].moves[(s.turn-1)%3];s.log=isCall?'コール！ 指定された順に押して。':s.move+'！ 緑の範囲で'+(s.kind==='ramen'?'「食べる」':'「よける」')+'。';}
+export function act(s,action,now){if(s.phase!=='ready'||s.pauseAt!==null)return false;if(action==='attack'){const hit=38+Math.min(18,s.combo*4);s.foeHp-=hit;s.log=hit+'ダメージ！';}else if(action==='guard'){s.guard=true;s.foeHp-=16;s.log='構えて少し押し返した。次のダメージを70%軽減。';}else if(action==='rest'){s.hp=Math.min(s.maxHp,s.hp+42);s.log='ひと息ついて体力を42回復。';}else if(action==='robot'){if(s.charges<=0)return false;s.charges--;s.foeHp-=92;s.guard=true;s.log='掃除ロボットが92ダメージ！ 次の攻撃も受け止める。';}else return false;const message=s.log;enemyTurn(s,now);if(s.phase!=='won')s.log=message+' '+s.log;return true;}
+export function advanceBattle(s,now){if(s.pauseAt!==null||!['call','timing'].includes(s.phase)||now<s.deadline)return false;s.log=s.phase==='call'?'コールが間に合わなかった。':'タイミングを逃した。';takeHit(s);return true;}
+export function react(s,value,now){if(s.pauseAt!==null)return false;if(advanceBattle(s,now))return false;if(s.phase==='call'){if(value!==s.call[s.callIndex]){s.log='コールが違った！';takeHit(s,.8);return true;}s.callIndex++;if(s.callIndex===s.call.length){s.combo++;s.foeHp-=26;s.log='コール成功！ ボスがひるんで26ダメージ。';playerTurn(s);}return true;}if(s.phase==='timing'){const p=battleProgress(s,now),[lo,hi]=timingWindow(s);if(p>=lo&&p<=hi){s.combo++;s.foeHp-=s.kind==='ramen'?34:20;s.hp=Math.min(s.maxHp,s.hp+(s.kind==='ramen'?6:0));s.log=s.kind==='ramen'?'麺を食べきった！ 攻撃を回避して反撃。':'すり抜けた！ 反撃が決まった。';playerTurn(s);}else{s.log=p<lo?'早すぎた！':'遅かった！';takeHit(s);}return true;}return false;}
+export function togglePause(s,now){if(['won','lost'].includes(s.phase))return;if(s.pauseAt===null){s.pauseAt=now;}else{const elapsed=Math.max(0,now-s.pauseAt);if(s.deadline){s.started+=elapsed;s.deadline+=elapsed;}s.pauseAt=null;}}

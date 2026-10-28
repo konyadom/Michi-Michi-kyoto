@@ -1,0 +1,72 @@
+{
+ "name": "みちしるべ — 京都の散歩地図",
+ "short_name": "みちしるべ",
+ "lang": "ja",
+ "start_url": "./",
+ "display": "standalone",
+ "background_color": "#f8f7f3",
+ "theme_color": "#f8f7f3",
+ "icons": [
+  {
+   "src": "icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512-maskable.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "scope": "./",
+ "shortcuts": [
+  {
+   "name": "散歩を記録する",
+   "short_name": "散歩",
+   "url": "./#explore",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "晩ごはん・食事記録",
+   "short_name": "食事",
+   "url": "./#nutrition",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "ねずみくんの部屋",
+   "short_name": "ねずみ",
+   "url": "./#pet",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ],
+ "description": "歩いた道を回数別に色分けする京都の地図。食事記録・ねずみくん・岩倉の暮らし。"
+}

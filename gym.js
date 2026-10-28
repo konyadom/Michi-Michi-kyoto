@@ -1,0 +1,8 @@
+// 近所の24時間ジム（LifeFit 宝ヶ池店）。行くとねずみが引き締まる。位置は住所から置き、詳細画面で直せる。
+export const GYM={id:'gym-kokusaikaikan',kind:'gym',icon:'dumbbell',title:'LifeFit 宝ヶ池店',place:'LifeFit 宝ヶ池店（24時間）',pos:[35.06482,135.78014],category:'shop',area:'岩倉西五田町',kicker:'運動 · 24時間ジム',aliases:['ジム','gym','24時間ジム','LifeFit','ライフフィット','宝ヶ池','国際会館','トレーニング'],address:'京都市左京区岩倉西五田町29-2',summary:'行くとねずみが引き締まる。週のノルマを貯める。',body:'宝ヶ池通と八丁街道の角、ZEAL BOXING STUDIO 岩倉店のとなりの24時間ジム。所在地は岩倉西五田町29-2。\nGPS記録中に4分以上いると訪問として数える。「今日来た」でも記録できる。1回ごとにねずみの体型が8ぶん引き締まる。',source:'自分の登録（住所は店舗情報より）',url:null,positionConfidence:'verified',note:'ピンは住所から置いた位置。ずれていれば「ジムの位置を直す」で入口に合わせられる。',defaultMemo:'ねずみがやせる。',personal:true};
+export const GYM_GOAL_DEFAULT=2;
+export const SLIM_PER_VISIT=8;
+// 週は月曜はじまり（日本時間）
+export function weekStart(day){const d=new Date(day+'T00:00:00Z'),w=(d.getUTCDay()+6)%7;return new Date(d.getTime()-w*86400000).toISOString().slice(0,10);}
+export function gymWeek(visits,day,goal=GYM_GOAL_DEFAULT){const start=weekStart(day),days=[...new Set(visits.filter(v=>v.shopId===GYM.id&&v.day>=start&&v.day<=day).map(v=>v.day))];return {start,count:days.length,goal,done:days.length>=goal,left:Math.max(0,goal-days.length)};}
+export function applyGymSettings(place,settings){if(!settings||typeof settings!=='object')return place;if(Array.isArray(settings.pos)&&settings.pos.length===2&&settings.pos.every(Number.isFinite)){place.pos=settings.pos.slice();place.positionConfidence='verified';place.note='位置は自分で置いたもの。';}if(typeof settings.name==='string'&&settings.name.trim()){place.title=settings.name.trim().slice(0,40);place.place=place.title;}return place;}

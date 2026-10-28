@@ -1,0 +1,25 @@
+みちしるべ — 地図データの出典と利用条件
+
+■ 背景地図
+国土地理院 最適化ベクトルタイル（optimal_bvmap-v1）
+https://maps.gsi.go.jp/vector/
+国土地理院コンテンツ利用規約に基づき利用。地形や等高線は描画していません。
+
+■ 山林・公園（緑地レイヤー）
+© OpenStreetMap contributors（ODbL）
+https://www.openstreetmap.org/copyright
+※ この公開版では緑地データを同梱していないため、表示されません。
+
+■ 京都府の境界（府内判定）
+地球地図日本（国土地理院）を dataofjapan/land が GeoJSON 化したもの
+https://github.com/dataofjapan/land
+境界は概略です。
+
+■ 施設検索
+Photon（komoot）/ © OpenStreetMap contributors
+
+■ 天気
+Open-Meteo https://open-meteo.com/（CC BY 4.0）
+
+■ 地図表示ライブラリ
+Leaflet / Protomaps Leaflet
