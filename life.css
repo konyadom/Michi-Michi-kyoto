@@ -231,3 +231,8 @@ svg.mouse-figure{stroke:none;stroke-width:1;fill:none;color:#33506f}
 .mouse-hiding-figure .m-eye{transform-box:fill-box;transform-origin:50% 50%;animation:mouse-blink 3.1s infinite}
 .mouse-hiding-figure .m-tail{transform-box:fill-box;transform-origin:100% 50%;animation:mouse-tail 2.2s ease-in-out infinite}
 .mouse-room.mouse-hiding .goat-bubble{background:#efece6;color:#6a645c}
+
+/* ---- コンビニ ---- */
+.map-pin.pin-conbini{background:#6b8cae}
+.story-art.art-conbini,.detail-art.art-conbini{background:#e6edf4;color:#4b6b8f}
+.shop-avatar.av-conbini{background:#e6edf4;color:#4b6b8f}
