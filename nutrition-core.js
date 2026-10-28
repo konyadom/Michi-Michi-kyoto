@@ -1,4 +1,4 @@
-import {jstDay,validDate} from './anniversaries.js';
+import {jstDay,validDate} from './anniversaries.js?v=e5ad2ae6d30a';
 export const DRI_URL='https://www.mhlw.go.jp/web/t_doc?dataId=78ab4652';
 export const MEXT_URL='https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html';
 // DRI 2025, male 18–29 years. RDA/AI/DG are intentionally distinct.

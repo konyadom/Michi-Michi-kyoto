@@ -1,5 +1,5 @@
 // 帰宅の「おつかれさま！」と、夜の流れ（お風呂 → ご飯 → ゆっくり）、電気毛布チャレンジ。
-import {distance} from './core.js';
+import {distance} from './core.js?v=e5ad2ae6d30a';
 export const HOME_RADIUS=90,AWAY_RADIUS=450;
 export const EVENING_STEPS=[['bath','お風呂','あたたまる'],['meal','ご飯','食べる'],['relax','ゆっくり','休む']];
 export const COLD_CHECKS=[['blanket','毛布、持ってきた？'],['socks','靴下を履こう'],['drink','あたたかい飲みもの']];

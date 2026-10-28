@@ -1,3 +1,4 @@
+import {CONBINI_FOODS} from './conbini-foods.js?v=e5ad2ae6d30a';
 // General-food entries are appended from the official MEXT spreadsheet.
 export const foods=[
  {id:'croquant-banana',name:'進々堂 バナナとくるみのクロッカン',aliases:'クロッカン くるみ クルミ バナナ 芸大 しんしんどう',unit:'個',quantity:1,evidence:'official',source:'https://www.shinshindo.jp/products/detail/d006154.html',note:'公式の1個あたりの表示（目安）。ビタミン・食物繊維など未掲載の項目は不明。',nutrients:{energy:525,protein:6.7,fat:28.4,carb:61.5,salt:.7}},
@@ -21,3 +22,5 @@ foods.push(
  {id:'gin-tomato-pasta',name:'トマトソースのパスタ（1皿・乾麺100g）',aliases:'パスタ トマト トマトソース ポモドーロ 自炊',unit:'皿',quantity:1,evidence:'estimate',source:MEXT,note:'乾麺100g・トマト缶150g・オリーブ油小さじ2・にんにくの概算。',nutrients:{energy:520,protein:16,fat:13,saturated:2,carb:85,fiber:9,salt:2.6,calcium:40,iron:2.5,zinc:2,vitA:60,vitD:0,vitE:3,vitB1:.2,vitB2:.1,vitB6:.35,vitB12:0,vitC:15,folate:30}},
  {id:'gin-rice-bowl',name:'ご飯（茶碗1杯・150g）',aliases:'ごはん ご飯 白米 ライス 茶碗',unit:'杯',quantity:1,evidence:'composition',source:'https://www.mext.go.jp/content/20260327-mxt_kagsei-mext-000029402_02.xlsx',note:'白ごはん150g分。成分表の値から計算。',nutrients:{energy:234,protein:3.8,fat:.5,saturated:.15,carb:55.7,fiber:2.3,salt:0,calcium:4.5,iron:.15,zinc:.9,vitA:0,vitD:0,vitE:null,vitB1:.03,vitB2:.02,vitB6:.03,vitB12:0,vitC:0,folate:4.5}}
 );
+// コンビニの成分表（conbini-foods.js）
+foods.push(...CONBINI_FOODS);

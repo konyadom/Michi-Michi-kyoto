@@ -1,6 +1,6 @@
-import {jstDay} from './anniversaries.js';
-import {EATING_HABITS,USUAL_FOODS} from './household.js';
-import {nutritionPeriod,nutrientGaps,gapSummary} from './nutrition-core.js';
+import {jstDay} from './anniversaries.js?v=e5ad2ae6d30a';
+import {EATING_HABITS,USUAL_FOODS} from './household.js?v=e5ad2ae6d30a';
+import {nutritionPeriod,nutrientGaps,gapSummary} from './nutrition-core.js?v=e5ad2ae6d30a';
 export const WEATHER_URL='https://api.open-meteo.com/v1/forecast?latitude=35.07&longitude=135.78&current=temperature_2m,apparent_temperature,is_day,precipitation,weather_code&daily=temperature_2m_min&timezone=Asia%2FTokyo&forecast_days=2';
 export const WEATHER_TTL=15*60*1000;
 export const DINNER_TITLE='今日の晩御飯はどうしようか？';

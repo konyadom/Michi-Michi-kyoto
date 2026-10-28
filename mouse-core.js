@@ -1,4 +1,4 @@
-import {normalizePet,carePet} from './life-core.js';
+import {normalizePet,carePet} from './life-core.js?v=e5ad2ae6d30a';
 const HOUR=3600000;
 export const DEFAULT_MOUSE_NAME='ねずみくん';
 const jst=now=>new Date(now+9*HOUR);

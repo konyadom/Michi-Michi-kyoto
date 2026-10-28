@@ -1,6 +1,6 @@
-import {goatArt,mouseArt,mouseSleepArt,mouseHideArt,vacuumArt} from './characters.js';
-import {isMouseAsleep,currentWeight,mouseShape,SHAPE_LABEL,mouseMood,MOOD_TEXT,isCursed,jstDayOf,isHiding} from './mouse-core.js';
-import {petStatus,CARE_COOLDOWN,eventPhase} from './life-core.js';
+import {goatArt,mouseArt,mouseSleepArt,mouseHideArt,vacuumArt} from './characters.js?v=e5ad2ae6d30a';
+import {isMouseAsleep,currentWeight,mouseShape,SHAPE_LABEL,mouseMood,MOOD_TEXT,isCursed,jstDayOf,isHiding} from './mouse-core.js?v=e5ad2ae6d30a';
+import {petStatus,CARE_COOLDOWN,eventPhase} from './life-core.js?v=e5ad2ae6d30a';
 const CURSED='変な石';
 export function petHome(p,esc){const away=p.travel.state!=='home';return '<button class="pet-home-card" data-action="pet"><span class="pet-home-art">'+mouseArt+'</span><span><small>うちのネズミ</small><strong>'+esc(p.name)+'</strong><em>'+(away?'外へ出かけたまま。まだ帰っていません。':'お世話と小さな寄り道')+'</em></span><b>→</b></button>';}
 export function petMarkup(p,places,esc,message='',now=Date.now(),extra={}){

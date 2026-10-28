@@ -1,4 +1,4 @@
-import {distance} from './core.js';
+import {distance} from './core.js?v=e5ad2ae6d30a';
 export const VISIT_MIN_MS=4*60*1000;
 export const AUTO_FREQUENT_DAYS=3;
 export const dayKey=t=>new Date(t+9*3600000).toISOString().slice(0,10);

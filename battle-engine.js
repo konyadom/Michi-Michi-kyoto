@@ -1,18 +1,57 @@
+// 街角バトル：止まらない。5つの選択肢が高速で出る。遅いか間違えるとダメージ。HPが0で力尽きる。
+// 今日の行動（歩いた距離・ジム・ねずみの体型）が「力」になり、持ち時間と一撃の重さに効く。
 export const ENEMIES={
- salary:{name:'疲れきったサラリーマン',hp:360,attack:23,subtitle:'「それ、今日中で」の怨念が残っている。',moves:['未読メールの山','終電ダッシュ','差し戻し三連発'],reward:3},
- student:{name:'暴れ大学生',hp:440,attack:28,subtitle:'提出まであと3時間。テンションだけが高い。',moves:['徹夜テンション','謎の胴上げ','単位くださいアタック'],reward:4},
- ramen:{name:'コール番長',hp:680,attack:35,subtitle:'架空のラーメン店員ボス。コールは待ってくれない。',moves:['麺の投げつけ','追いコール','替え玉流星群'],reward:7}
+ salary:{name:'疲れきったサラリーマン',subtitle:'「それ、今日中で」の怨念が残っている。',threshold:48},
+ student:{name:'暴れ大学生',subtitle:'提出まであと3時間。テンションだけが高い。',threshold:58},
+ ramen:{name:'コール番長',subtitle:'架空のラーメン店員ボス。コールは待ってくれない。',threshold:68}
 };
-const CALLS=[['ニンニク','ヤサイ'],['アブラ','カラメ','ニンニク'],['ヤサイ','ニンニクなし','アブラ']];
-export const CALL_OPTIONS=['ニンニク','ニンニクなし','ヤサイ','アブラ','カラメ','そのまま'];
-export function createBattle(kind='salary',easy=false){const foe=ENEMIES[kind]||ENEMIES.salary;return {kind:ENEMIES[kind]?kind:'salary',easy,foeMax:foe.hp,foeHp:foe.hp,hp:180,maxHp:180,turn:1,charges:3,phase:'ready',guard:false,pauseAt:null,log:'まずは行動を選んでください。',call:[],callIndex:0,combo:0};}
-export function battleProgress(s,now){return s.deadline?Math.max(0,Math.min(1,((s.pauseAt??now)-s.started)/(s.deadline-s.started))):0;}
-export function timingWindow(s){return s.easy?[.52,.84]:s.kind==='ramen'?[.71,.84]:[.59,.84];}
-function terminal(s){if(s.foeHp<=0){s.foeHp=0;s.phase='won';s.log='勝った！ 帰ったらヤギにも報告しよう。';return true;}if(s.hp<=0){s.hp=0;s.phase='lost';s.log='今日はここまで。もう一度挑戦できます。';return true;}return false;}
-function playerTurn(s){if(terminal(s))return;s.phase='ready';s.turn++;s.guard=false;s.deadline=0;}
-function takeHit(s,mult=1){const enemy=ENEMIES[s.kind],rage=s.foeHp<s.foeMax*.45?1.3:1;const damage=Math.round(enemy.attack*rage*(s.easy?.72:1)*(s.guard?.3:1)*mult);s.hp=Math.max(0,s.hp-damage);s.log+=' 銀くんに'+damage+'ダメージ。';s.combo=0;playerTurn(s);}
-function enemyTurn(s,now){if(terminal(s))return;const isCall=s.kind==='ramen'&&s.turn%2===1;s.phase=isCall?'call':'timing';s.started=now;s.deadline=now+(isCall?(s.easy?7000:3600):(s.easy?3600:s.kind==='ramen'?2100:2700));s.call=CALLS[Math.floor(s.turn/2)%CALLS.length].slice();s.callIndex=0;s.move=ENEMIES[s.kind].moves[(s.turn-1)%3];s.log=isCall?'コール！ 指定された順に押して。':s.move+'！ 緑の範囲で'+(s.kind==='ramen'?'「食べる」':'「よける」')+'。';}
-export function act(s,action,now){if(s.phase!=='ready'||s.pauseAt!==null)return false;if(action==='attack'){const hit=38+Math.min(18,s.combo*4);s.foeHp-=hit;s.log=hit+'ダメージ！';}else if(action==='guard'){s.guard=true;s.foeHp-=16;s.log='構えて少し押し返した。次のダメージを70%軽減。';}else if(action==='rest'){s.hp=Math.min(s.maxHp,s.hp+42);s.log='ひと息ついて体力を42回復。';}else if(action==='robot'){if(s.charges<=0)return false;s.charges--;s.foeHp-=92;s.guard=true;s.log='掃除ロボットが92ダメージ！ 次の攻撃も受け止める。';}else return false;const message=s.log;enemyTurn(s,now);if(s.phase!=='won')s.log=message+' '+s.log;return true;}
-export function advanceBattle(s,now){if(s.pauseAt!==null||!['call','timing'].includes(s.phase)||now<s.deadline)return false;s.log=s.phase==='call'?'コールが間に合わなかった。':'タイミングを逃した。';takeHit(s);return true;}
-export function react(s,value,now){if(s.pauseAt!==null)return false;if(advanceBattle(s,now))return false;if(s.phase==='call'){if(value!==s.call[s.callIndex]){s.log='コールが違った！';takeHit(s,.8);return true;}s.callIndex++;if(s.callIndex===s.call.length){s.combo++;s.foeHp-=26;s.log='コール成功！ ボスがひるんで26ダメージ。';playerTurn(s);}return true;}if(s.phase==='timing'){const p=battleProgress(s,now),[lo,hi]=timingWindow(s);if(p>=lo&&p<=hi){s.combo++;s.foeHp-=s.kind==='ramen'?34:20;s.hp=Math.min(s.maxHp,s.hp+(s.kind==='ramen'?6:0));s.log=s.kind==='ramen'?'麺を食べきった！ 攻撃を回避して反撃。':'すり抜けた！ 反撃が決まった。';playerTurn(s);}else{s.log=p<lo?'早すぎた！':'遅かった！';takeHit(s);}return true;}return false;}
-export function togglePause(s,now){if(['won','lost'].includes(s.phase))return;if(s.pauseAt===null){s.pauseAt=now;}else{const elapsed=Math.max(0,now-s.pauseAt);if(s.deadline){s.started+=elapsed;s.deadline+=elapsed;}s.pauseAt=null;}}
+// 出てくる場面と選択肢。先頭が正解。順番は毎回シャッフル。
+export const PROMPTS={
+ salary:[
+  ['終電ダッシュで突っ込んでくる',['よける','止める','一緒に走る']],
+  ['未読メールの山を投げてきた',['既読にする','読む','返信する']],
+  ['「差し戻しで」と言った',['聞き流す','謝る','反論する']],
+  ['よろけた。隙だ',['体当たり','様子を見る','声をかける']],
+  ['名刺を出してきた',['受け取らない','受け取る','交換する']]
+ ],
+ student:[
+  ['謎の胴上げが始まった',['逃げる','参加する','撮る']],
+  ['「単位ください」と迫る',['断る','あげる','考える']],
+  ['徹夜テンションで叫んだ',['耳をふさぐ','聞く','叫び返す']],
+  ['コンビニ袋を振り回す',['しゃがむ','ジャンプ','つかむ']],
+  ['息切れしてる。隙だ',['体当たり','休ませる','水をあげる']]
+ ],
+ ramen:[
+  ['麺が飛んできた',['よける','食べる','見とれる']],
+  ['「ニンニク入れますか」',['ヤサイマシ','あとで','無言']],
+  ['追いコールが来た',['即答','聞き返す','帰る']],
+  ['替え玉流星群',['しゃがむ','受け止める','数える']],
+  ['丼を置いた。隙だ',['体当たり','完食','写真']]
+ ]
+};
+// 今日の力：基本40 ＋ 歩いた距離（1kmで6、上限30）＋ ジム（1回8、上限16）＋ ねずみがふつうの体型なら6
+export function powerOf({km=0,gym=0,shape='normal'}={}){
+ const parts=[['基本',40],['歩いた '+km.toFixed(1)+' km',Math.min(30,Math.round(km*6))],['ジム 今週'+gym+'回',Math.min(16,gym*8)],['ねずみ '+(shape==='normal'?'ふつう':shape==='fat'?'ふっくら':'やせ気味'),shape==='normal'?6:0]];
+ return {total:parts.reduce((s,[,v])=>s+v,0),parts:parts.filter(([,v])=>v>0)};
+}
+// 力が高いほど持ち時間が少し長く、外したときのダメージが軽く、一撃が重い
+export function battleRules(power,threshold=48){
+ const p=Math.max(30,power);
+ const time=0.8+Math.min(.5,p/180);          // 40→1.02倍、60→1.13倍、90→1.3倍
+ const miss=Math.min(1.6,threshold/p);       // 相手の基準より力が低いと痛い
+ const hit=Math.round(12+p/3);               // 40→25、60→32、90→42（相手のHPは100）
+ const windows=[1300,1100,950,850,750].map(w=>Math.round(w*time));
+ const missDamage=[20,25,30,35,40].map(d=>Math.round(d*miss));
+ return {time,hit,windows,missDamage};
+}
+export function planBattle(kind,stats,random=Math.random){
+ kind=ENEMIES[kind]?kind:'salary';const foe=ENEMIES[kind],power=powerOf(stats),rules=battleRules(power.total,foe.threshold);
+ const prompts=PROMPTS[kind].map(([text,options],i)=>{const order=options.map((o,j)=>j);for(let a=order.length-1;a>0;a--){const b=Math.floor(random()*(a+1));[order[a],order[b]]=[order[b],order[a]];}return {text,options:order.map(j=>options[j]),correct:order.indexOf(0),window:rules.windows[i],missDamage:rules.missDamage[i],hitDamage:rules.hit};});
+ return {kind,foe:{...foe,kind},power,rules,prompts,hp:100,foeHp:100};
+}
+// 1つ答えたあとの状態。choice は選んだ番号、-1 は時間切れ
+export function applyAnswer(state,prompt,choice){
+ const ok=choice===prompt.correct;
+ return {...state,hp:ok?state.hp:Math.max(0,state.hp-prompt.missDamage),foeHp:ok?Math.max(0,state.foeHp-prompt.hitDamage):state.foeHp,hits:(state.hits||0)+(ok?1:0),misses:(state.misses||0)+(ok?0:1),late:(state.late||0)+(choice<0?1:0),ok,timedOut:choice<0};
+}
+export function battleOutcome(state){return state.foeHp<=0?'won':state.hp<=0?'dead':'lost';}
